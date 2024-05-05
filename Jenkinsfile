@@ -46,13 +46,12 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                                        
-                    Copy-Item -Path '.\\publish\\*' -Destination 'E:\\coreapp' -Force
-                                      
-                }
-                }
+                 Copy-Item -Path '.\\publish\\*' -Destination 'E:\\coreapp' -Force
+                }                  
+                
             }
         }
+    }
     
 
     post {
