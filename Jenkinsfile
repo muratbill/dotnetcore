@@ -48,7 +48,7 @@ pipeline {
                 script {
                                         
                     Copy-Item -Path '.\\publish\\*' -Destination 'E:\\coreapp' -Force
-                                        
+                                      
                 }
                 }
             }
