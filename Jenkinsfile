@@ -1,6 +1,7 @@
 pipeline {
+    agent{
     label 'testwindows_murat'
-
+    }
     environment {
         DOTNET_CLI_HOME = "C:\\Program Files\\dotnet"
     }
