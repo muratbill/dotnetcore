@@ -47,7 +47,7 @@ pipeline {
             steps {
                 script {
                   powershell '''
-                 Copy-Item -Path '.\\publish\\*' -Destination 'E:\\coreapp' -Force
+                 Copy-Item -Path '.\\publish\\*' -Destination 'E:\\coreapp' -Recurse -Force
                  '''
                 }                  
                 
